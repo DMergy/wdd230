@@ -1,0 +1,28 @@
+
+header {
+    display: grid;
+    grid-template-columns: 1000px auto;
+    background-color: #800080;
+    border-radius: 50px 50px 50px 50px;
+    padding: 0.5em;
+ 
+  }
+h2 {
+    color: #FFFFFF;
+    font-family: Garamond, Georgia, serif;
+    grid-column: 2, 3, 4;   
+
+}
+h3 {
+    color: #000000;
+    font-family: Garamond, Georgia, serif;
+    text-align: center;
+}
+body {
+    background-color: #E6E6FA;
+    font-family: Lato, Tahoma, sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: left;
+  
+  }
