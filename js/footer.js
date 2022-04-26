@@ -1,1 +1,0 @@
-document.getElementById("mostRecent").innerHTML
