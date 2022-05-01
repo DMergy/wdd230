@@ -14,17 +14,19 @@ img {
 }
 h2 {
     color: #FFFFFF;
-    font-family: Garamond, Georgia, serif;
+    font-family: 'Lato', sans-serif; 'Playfair Display', serif;
     
 }
 h3 {
     color: #000000;
-    font-family: Garamond, Georgia, serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
     text-align: center;
 }
 body {
     background-color: #E6E6FA;
-    font-family: Lato, Tahoma, sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
     max-width: 960px;
     margin: 0 auto;
     text-align: left;
