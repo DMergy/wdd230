@@ -9,7 +9,8 @@ header {
  
   }
 img {
-  height: 150 px;
+  width: 200 px;
+  height: auto;
   
 }
 h1 {
@@ -27,6 +28,14 @@ h2 {
     font-size: 1rem;
     text-align: center;
 }
+
+header, footer {
+  text-align: center;
+  background-color: #800080;
+  color: #000000;
+  
+}
+
 body {
     background-color: #E6E6FA;
     font-family: 'Lato', sans-serif;
