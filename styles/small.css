@@ -1,0 +1,46 @@
+header {
+    display: grid;
+    grid-template-columns: 200 px 2fr;
+    background-color: #800080;
+    border-radius: 50px 50px 50px 50px;
+    padding: 0.5em;
+    align-items: center;
+ 
+  }
+img {
+  width: 200 px;
+  height: auto;
+  
+}
+h1 {
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin: 0.15rem;
+    
+}
+h2 {
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #800080;
+  color: #000000;
+  
+}
+
+body {
+    background-color: #E6E6FA;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: left;
+  
+  }
