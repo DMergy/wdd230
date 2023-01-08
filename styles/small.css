@@ -1,11 +1,9 @@
 header {
-    display: grid;
-    grid-template-columns: 200 px 2fr;
+    display: flex;
     background-color: #800080;
     border-radius: 50px 50px 50px 50px;
-    padding: 0.5em;
-    align-items: center;
- 
+    padding: 1.5em;
+     
   }
 img {
   width: 200 px;
@@ -31,7 +29,7 @@ h2 {
 header, footer {
   text-align: center;
   background-color: #800080;
-  color: #000000;
+  color: #FFFFFF;
   
 }
 
