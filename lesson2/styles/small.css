@@ -1,0 +1,53 @@
+body {
+    background-color: #E6E6FA;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+    background-color: violet;
+    border: 12px;
+    border-style: solid;
+    border-color: blueviolet;  
+    padding: 5px;
+}
+
+#content {
+    display: flex;
+    
+}
+
+img {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+    
+}
+
+.hierarchy, .whitespace, .fittslaw {
+    flex: 33.33%;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    border: 8px;
+    border-style: solid;
+    border-color: blueviolet;
+    
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    background-color: violet;
+    border: 12px;
+    border-style: solid;
+    border-color: blueviolet;  
+    padding: 5px;
+
+}
