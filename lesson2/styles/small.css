@@ -29,15 +29,20 @@ img {
     
 }
 
-.hierarchy, .whitespace, .fittslaw {
-    flex: 33.33%;
-    padding: 10px;
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
     margin: 5px;
     text-align: center;
+        
+}
+
+section {
+    display: block;
     border: 8px;
     border-style: solid;
     border-color: blueviolet;
-    
 }
 
 footer {
