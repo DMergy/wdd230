@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+header,
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation {
+	list-style: none;
+	display: flex;
+	background-color: #73d2de;
+	text-align: center;
+}
+.navigation li {
+	flex: 1 1 auto;
+}
+.navigation a {
+	display: block;
+	color: #fb8f67;
+	padding: 0.75rem;
+	text-decoration: none;
+}
+.navigation a:hover {
+	color: #73d2de;
+	background-color: #fb8f67;
+	font-weight: 700;
+}
+
