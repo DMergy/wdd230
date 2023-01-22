@@ -57,6 +57,7 @@ footer {
 	background-color: #73d2de;
 	color: #000000;
 	text-align: center;
+  margin-top: 2rem;
 	
 }
 
@@ -69,7 +70,7 @@ h2 {
     
 }
 
-p ul {
+p {
 
   font-size: 1rem;
   margin-left: 3rem;
@@ -77,11 +78,11 @@ p ul {
 
 }
 
-ul {
+.scenarios ul {
   padding-bottom: 3rem;
 }
 
-li {
+.scenarios li {
   margin-left: 6rem;
  
 }
@@ -89,4 +90,35 @@ li {
 body h1 h2 p {
   font-family: 'Merriweather', serif;
   font-family: 'PT+Serif', serif;
+}
+
+.font1 {
+  font-size: 1rem;
+  font-family: "Merriweather", serif;
+  margin-left: 4rem;
+}
+
+.font2 {
+  font-size: 2rem;
+  font-family: "PT+Serif", serif;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.palette {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem;
+  font-family: "Merriweather", serif;
+}
+
+.palette th {
+  border: solid;
+  padding: 15px;
+}
+
+.palette td {
+  border: solid;
+  min-width: 100px;
+  text-align: center;
 }
