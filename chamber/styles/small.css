@@ -4,9 +4,9 @@ header {
     padding: 1.5em;
     text-align: center;
     gap: 5rem;
-  }
+}
 
-  nav button {
+nav button {
     margin: .2rem 2vw;
     background: transparent;
     border: none;
