@@ -63,7 +63,7 @@ nav ul li a:hover {
 .banner {
     background-color: #fb8f67;
     color: #784315;
-    font-size: 1em;
+    padding-top: 2.5em;
     font-style: italic;
     grid-column: 2 / 3;
 
