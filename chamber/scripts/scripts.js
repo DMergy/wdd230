@@ -31,5 +31,16 @@ function toggleMenu() {
     document.getElementById("hamburgerBtn").classList.toggle("open");
 }
 
-const x = document.getElementById('hamburgerBtn')
+const x = document.getElementById("hamburgerBtn")
 x.onclick = toggleMenu;
+
+// banner to display only Monday and Tuesday
+if (today.getDay() == 1 || today.getDay() == 2)
+{
+    document.getElementById("banner").style.display = "block";
+}
+else {
+    document.getElementById("banner").style.display = "none";
+}
+
+
