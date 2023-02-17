@@ -31,9 +31,14 @@ nav {
 }
 
 nav ul {
+    display: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+nav ul.open {
+    display: block;
 }
 
 nav ul li a {
@@ -52,6 +57,19 @@ nav ul li.active a {
 nav ul li a:hover {
     background-color: #784315;
     color: #fb8f67;
+}
+
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
 }
 
 .social {

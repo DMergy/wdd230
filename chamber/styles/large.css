@@ -1,7 +1,17 @@
-@media only screen and (min-width: 64rem) {
-    
+@media only screen and (min-width: 64rem) 
+{
+    nav button {
+        display: none;
+    }
+    nav ul#primaryNav {
+        display: flex;
+        margin-left: 2vw;
+        border-left: 1px solid rgba(0,0,0,0.2);
+    }
     nav ul li a {
-        padding: 0.5rem 1rem;
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.2);
+        padding: .5rem 1rem;
     }
 
 }

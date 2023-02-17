@@ -35,6 +35,8 @@ const x = document.getElementById("hamburgerBtn")
 x.onclick = toggleMenu;
 
 // banner to display only Monday and Tuesday
+const banner =  document.querySelector(".banner");
+
 if (today.getDay() == 1 || today.getDay() == 2)
 {
     document.getElementById("banner").style.display = "block";
