@@ -37,12 +37,12 @@ x.onclick = toggleMenu;
 // banner to display only Monday and Tuesday
 const banner =  document.querySelector(".banner");
 
-if (today.getDay() == 1 || today.getDay() == 2)
+if (date.getDay() == 1 || date.getDay() == 2)
 {
-    document.getElementById("banner").style.display = "block";
+    document.getElementById(".banner").style.display = "block";
 }
 else {
-    document.getElementById("banner").style.display = "none";
+    document.getElementById(".banner").style.display = "none";
 }
 
 

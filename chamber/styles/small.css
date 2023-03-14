@@ -13,6 +13,7 @@ header {
     color: #784315;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    
    
 }
 
@@ -134,8 +135,8 @@ main {
     grid-row: 1 / 2;
 }
 
-img {
-    padding-top: 0.25em;
+.greeting {
+    text-align: left;
 }
 
 .weather {
@@ -149,10 +150,35 @@ img {
 }
 
 .hero {
+    position: relative;
     grid-column: 2 / 3;
     grid-row: 1 / 3;
 }
 
+.greeting {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: #784315;
+    font: bold;
+    
+}
+
+.btn {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    background-color: #fb8f67;
+    font-size: 24px;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.btn:hover {
+    background-color: #2ec4b6;
+}
 .news {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
