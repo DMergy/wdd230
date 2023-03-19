@@ -2,7 +2,7 @@
 {
     header {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-auto-columns: auto;
         grid-template-rows: fit-content;
         background-color: #2ec4b6;
         color: #000000;
@@ -87,7 +87,7 @@
         padding-top: 1.5em;
         font-style: italic;
         font-weight: bold;
-        font-size: 22px;
+        font-size: 18px;
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     
@@ -119,22 +119,16 @@
     
     main {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 200px 200px 200px;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: fit-content;
         justify-content: center;
         padding: 0.20em;
     }
     
-    .event, .weather, .join, .hero, .news, .spotlight1, .spotlight2, .spotlight3 {
-        border: 2px solid black;
-        background-color: #2ec4b6;
-        margin: 0.25em;
-        
-    }
-    
+  
     .event {
         grid-column: 1 / 2;
-        grid-row: 1 / 2;
+        grid-row: 8 / 9;
     }
     
     .greeting {
@@ -142,18 +136,18 @@
     }
     
     .weather {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        grid-row: 8 / 9;
     }
     
     .join {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+        grid-row: 7 / 8;
     }
     
     .hero {
         position: relative;
-        grid-column: 2 / 3;
+        grid-column: 1 / 3;
         grid-row: 1 / 3;
     }
     
@@ -182,27 +176,24 @@
         background-color: #2ec4b6;
     }
     .news {
-        grid-column: 2 / 3;
+        grid-column: 1 / 3;
         grid-row: 3 / 4;
     }
     
     .spotlight1 {
-        grid-column: 3 / 4;
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
     }
     
     .spotlight2 {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
     }
     
-    .spotlight2 {
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
-    }
-    
+  
     .spotlight3 {
-        grid-column: 3 / 4;
-        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
     }
     
     footer {
