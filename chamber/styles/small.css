@@ -239,9 +239,15 @@ footer {
 main#discoverss {
     display: grid;
     grid-template-columns: 2fr;
-    grid-template-rows: fit-content;
+    grid-template-rows: auto;
     justify-content: center;
+    font-size: 18px;
       
+}
+
+h1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2
 }
 
 h3 {
@@ -250,13 +256,13 @@ h3 {
 
 .info {
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     text-align: left;
 }
 
 .visual {
     grid-column: 1 /2;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
 }
 
 .visual img {
