@@ -168,22 +168,19 @@
         padding-top: 0.25em;
     }
 
+/* ----------------- Discover ------------------ */
+
     main#discoverss {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-template-rows: auto;
+        font-size: 22px;
     }
 
-    .stats {
+    .info {
         grid-column: 2 / 3;
-        grid-row: 1 / 2;
         text-align: left;
     }
 
-    .history {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-        text-align: left;
+    .visual {
+        grid-column: 1 / 2;
     }
-
+ 
 }
