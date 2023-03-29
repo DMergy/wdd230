@@ -82,38 +82,24 @@ else {
 }
 
 // Days since last visit /
-const todayDisplay = document.querySelector(".today");
-const visitDisplay = document.querySelector(".visits");
-const daysSinceLast = document.querySelector(".since-days");
+let sinceLastString = "";
 
-//Get the stored value in localStorage.
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
+function getDaysSince() {
+	if (!localStorage.getItem("lastVisit")) {
+		localStorage.setItem("lastVisit", new Date ().getTime());
+		sinceLastString = ("This is your first visit to this page, welcome!");
+		return sinceLastString;
+	
+	}
+	else {
+		var currentDate = new Date();
+		var lastVisit = new Date(parseInt(localStorage.getItem("lastVisit")));
+		var calcTime = currentDate - lastVisit;
+		var daysSinceLast = Math.ceil(calcTime / 86400000);
+		localStorage.setItem("lastVisit", new Date().getTime());
 
-let lastVisit = Number(window.localStorage.getItem("lastvisit-ls"));
-
-
-let current = Date.now();
-let daysSince = current - lastVisit;
-
-let day = Math.round((daysSince)/ 86400000);
-
-
-if(numVisits != 0) {
-    visitDisplay.textContent = numVisits;
-    daysSinceLast.textContent = day;
-    
-} else {
-    visitDisplay.textContent = "This is your first visit";
-}
-
-//Increment number of visits.
-numVisits ++;
-
-//Store the new number of visits value.
-localStorage.setItem("visits-ls", numVisits);
-
-//Store today's date.
-localStorage.setItem("lastvisit-ls", Date.now());
-
-//Show today's date.
-todayDisplay.textContent=(Date.now());
+		sinceLastString = ("It's been " + daysSinceLast + " day(s) since your last visit.");
+		return sinceLastString;
+	}
+};
+document.querySelector("#dayssince").innerHTML = getDaysSince();
