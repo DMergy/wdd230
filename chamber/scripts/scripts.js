@@ -23,8 +23,8 @@ document.querySelector("#currentYear").textContent = year;
 const lastMod = document.lastModified;
 document.querySelector("#lastMod").textContent = lastMod;
 
-//const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
-//document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
+// const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
+// document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
 
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
@@ -34,7 +34,7 @@ function toggleMenu() {
 const x = document.getElementById("hamburgerBtn")
 x.onclick = toggleMenu;
 
- /*Add a banner to the page on Mondays and Tuesdays*/
+ // Add a banner to the page on Mondays and Tuesdays /
 const banner = document.querySelector('#banner');
 var currentDate = new Date()
 var weekday = new Array(7);
@@ -53,7 +53,7 @@ else {
     banner.style.display = 'none';
 }
 
-//* Discover Page Lazy Loading //*
+// Discover Page Lazy Loading /
 
 var imagesToLoad = document.querySelectorAll('img[data-src]');
 var loadImages = function(image) {
@@ -80,3 +80,40 @@ else {
 		loadImages(img);
 	});
 }
+
+// Days since last visit /
+const todayDisplay = document.querySelector(".today");
+const visitDisplay = document.querySelector(".visits");
+const daysSinceLast = document.querySelector(".since-days");
+
+//Get the stored value in localStorage.
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+
+let lastVisit = Number(window.localStorage.getItem("lastvisit-ls"));
+
+
+let current = Date.now();
+let daysSince = current - lastVisit;
+
+let day = Math.round((daysSince)/ 86400000);
+
+
+if(numVisits != 0) {
+    visitDisplay.textContent = numVisits;
+    daysSinceLast.textContent = day;
+    
+} else {
+    visitDisplay.textContent = "This is your first visit";
+}
+
+//Increment number of visits.
+numVisits ++;
+
+//Store the new number of visits value.
+localStorage.setItem("visits-ls", numVisits);
+
+//Store today's date.
+localStorage.setItem("lastvisit-ls", Date.now());
+
+//Show today's date.
+todayDisplay.textContent=(Date.now());
