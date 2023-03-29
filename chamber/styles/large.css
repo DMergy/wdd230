@@ -181,5 +181,12 @@
     .visual {
         grid-column: 1 / 2;
     }
+
+/* ----------------- Join ---------------------- */
+
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
  
 }
