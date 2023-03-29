@@ -103,3 +103,10 @@ function getDaysSince() {
 	}
 };
 document.querySelector("#dayssince").innerHTML = getDaysSince();
+
+// Join Page - Hidden Date //
+
+var currentDate = new Date();
+var formattedDate = currentDate.toLocaleString();
+
+document.querySelector("#date").value = formattedDate;

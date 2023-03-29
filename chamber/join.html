@@ -66,7 +66,7 @@
                     
                     <label class="top">Business Name*  <input type="text" name="bname" required></label>
                     <label class="top">Business Description  <textarea name="bdesc" rows="4" cols="30"></textarea></label>
-                    <label class="top">Business Title  <input type="text" name="btitle"></label>
+                    <label class="top">Business Title  <input type="text" name="btitle" pattern="^([A-Za-z\s\-]){7,}"></label>
                     
                 </fieldset>
 
@@ -81,6 +81,7 @@
 
                 </fieldset>
 
+                <input type="hidden" id="date" name="date">
                 <input type="submit" value="Join Today" class="submitBtn">
 
             </form>   

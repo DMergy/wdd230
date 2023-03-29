@@ -423,3 +423,8 @@ caption {
     font-size: 16px;
     padding: 10px;
 }
+
+main#thanks {
+    display: block;
+    padding: 5rem;
+}
