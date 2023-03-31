@@ -1,4 +1,22 @@
-const url = "json/directory.json";
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+if (gridbutton) {
+    gridbutton.addEventListener("click", () => {
+        display.classList.add("grid");
+        display.classList.remove("list");
+    });
+
+    listbutton.addEventListener("click", showList);
+
+    function showList() {
+        display.classList.add("list");
+        display.classList.remove("grid");
+    }
+}
+
+const url = "json/data.json";
 
 async function getSeasideData() {
     const response = await fetch(url);
@@ -11,7 +29,7 @@ async function getSeasideData() {
 getSeasideData();
   
 const displaySeaside = (seaside) => {
-    const cards = document.querySelector("div.cards"); // select the output container element
+    const cards = document.querySelector("section.cards"); // select the output container element
 
     seaside.forEach((seaside) => {
         // Create elements to add to the div.cards element
