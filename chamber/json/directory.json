@@ -2,13 +2,15 @@
   "seaside": [
     {
       "logo": "images/lanai.png",
+      "company": "Lanai at the Cove",
       "address": "3140 Sunset Blvd",
       "phone": "503-738-6343",
       "web": "https://seasidelanai.com",
       "join": "gold"
     },
     {
-      "logo": "images/wheelfun.png",
+      "logo": "images/wheelfunlogo.png",
+      "company": "Wheel Fun Rentals",
       "address": "321 S. Holladay Drive",
       "phone": "503-738-8447",
       "web": "https://wheelfunrentals.com/or/seaside/holladay-dr",
@@ -16,6 +18,7 @@
     },
     {
       "logo": "images/carouselmalllogo_150-150.png",
+      "company": "Seaside Carousel Mall", 
       "address": "300 Broadway",
       "phone": "503-738-6728",
       "web": "https://seasidecarouselmall.com",
@@ -23,36 +26,42 @@
     },
     {
       "logo": "images/bythesea.png",
+      "company": "By the Sea",
       "address": "300 Broadway, Suite #5",
       "phone": "503-738-9219",
       "web": "https://seasidecarouselmall.com/store/by-the-sea-shells-gifts"
     },
     {
       "logo": "images/evokewinery.png",
+      "company": "Evoke Winery",
       "address": "270 S. Columbia St #486",
       "phone": "541-386-3700",
       "web": "https://evokewinery.com/pages/seaside"
     },
     {
       "logo": "images/khanprop.png",
+      "company": "Khan Properties",
       "address": "812 Avenue F",
       "phone": "503-717-5353",
       "web": "https://www.khanpropertiesgroup.com"
     },
     {
       "logo": "images/upalogo.png",
+      "company": "Ulbricht Public Accounting",
       "address": "3140 Sunset Blvd",
       "phone": "503-738-7282",
       "web": "https://www.ulbrichtllc.com"
     },
     {
       "logo": "images/shoreline.png",
+      "company": "Shoreline Office Solutions",
       "address": "741 Avenue A",
       "phone": "503-717-2138",
       "web": "https://shorelineoffice.com"
     },
     {
       "logo": "images/candyman.png",
+      "company": "Seaside Candyman",
       "address": "21 North Columbia, Suite 105",
       "phone": "503-738-5280",
       "web": "https://www.seasidecandyman.com"
