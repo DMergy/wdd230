@@ -54,10 +54,14 @@
             <p>Knights of Columbus<br>Annual Fish Fry and Crab Auction<br>April 13, 2023</p>
         </div>
         <div class="weather">
-            <h3>Weather</h3>
-            <p>Currently: <span id="t">30</span>&#176;F</p>
-            <p>Wind Speed: <span id="s">10</span> mph</p>
-            <p>WindChill: <span id="w"></span>&#176;F</p>
+            <p><strong>Weather in Seaside</strong></br>
+            Currently: <span id="current-temp"></span> &deg;F</p>
+            <figure>
+                <img src="" alt="" id="weather-icon" />
+                <figcaption></figcaption>
+            </figure>
+            <p>Wind Speed: <span id="wind-speed"></span> mph</br>
+            WindChill: <span id="wind-chill"></span>&#176;F</p>
         </div>
         <div class="join">
             <h2>Join</h2>
@@ -130,6 +134,7 @@
         </div>
     </footer>
     <script src="scripts/scripts.js"></script>
-    <script src="scripts/windchill.js"></script> 
+    <script src="scripts/weatherapi.js"></script>
+     
 </body>
 </html>

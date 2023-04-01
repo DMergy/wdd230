@@ -121,7 +121,6 @@ main {
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: fit-content;
-    justify-content: center;
     padding: 0.20em;
 }
 
@@ -144,6 +143,7 @@ main {
 .weather {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
+    
 }
 
 .join {
@@ -156,8 +156,6 @@ main {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 }
-
-
 
 .greeting {
     position: absolute;
