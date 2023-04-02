@@ -268,7 +268,7 @@ h3 {
     padding-top: 2em;  
 }
 
-.info {
+.city {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     text-align: left;

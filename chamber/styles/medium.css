@@ -243,7 +243,7 @@
         padding-top: 2em;  
     }
 
-    .info {
+    .city {
         grid-column: 1 / 4;
         grid-row: 2 / 3;
         text-align: left;
