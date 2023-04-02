@@ -187,28 +187,28 @@
     }
 
  
-}
-
 /* --------------- Contact ------------------- */
 
-main#contactss {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: auto;
+    main#contactss {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto;
 
-}
+    }
 
-.roosevelt {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
+    .roosevelt {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
 
-.touch {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
+    .touch {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
 
-.info {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
+    .info {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
 }
