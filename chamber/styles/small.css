@@ -527,3 +527,85 @@ section {
 	background-color: #bed;
 }
 
+/* ------------- Contact -------------- */
+
+main#contactss {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+
+}
+
+.roosevelt {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.touch {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.info {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+
+
+.touch form fieldset {
+    margin: 2rem 0;
+    border: 5px solid #2ec4b6;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+.touch form legend {
+    color: #784315;
+    margin: 0 1rem;
+    padding: .5rem;
+    font-size: 20px;
+    
+}
+
+.touch form, form div {
+    display: block;
+    color: #784315;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.touch form input, form textarea, form select {
+    
+    display: block;
+    font-size: 1rem;
+    border: solid 3px #2ec4b6;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.touch form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    
+}
+
+.touch form input:required {
+    border-left: #fb8f67 solid 8px;
+}
+
+.touch form input:required:valid {
+    border-left: #784315 solid 8px;
+}
+
+
