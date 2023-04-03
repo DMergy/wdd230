@@ -37,20 +37,34 @@ function displayResults(weatherData) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
+
     
-}
+    
+    updateWindChill();
+};
 
-const t = weatherData.main.temp.toFixed(0);
-const s = weatherData.wind.speed.toFixed(2);
-let windchill = "";
+function updateWindChill() {
+  const temp1 = document.querySelector("#current-temp");
+  const speed1 = document.querySelector("#wind-speed");
+  const chill = document.querySelector("#wind-chill");
 
-function windChill(t, s) {
-  if (t <= 50 && s > 3) {
-    windchill = Math.round(35.74 + (0.6215 * t) - (35.75 * (s ** 0.16)) + (0.4275 * t * (s ** 0.16)));
+  let temp2 = parseInt(temp1.textContent);
+  let speed2 = parseInt(speed1.textContent);
+
+  let factor = 0;
+
+  if (temp2 <= 50 && speed2 > 3) {
+    let factor =
+        35.74 +
+        0.6215 * temp2 -
+        35.75 * speed2 ** 0.16 +
+        0.4275 * temp2 * speed2 ** 0.16;
+    
+      factor = Math.round(factor).toString();
+      chill.innerText = factor;
+    //windchill = Math.round(35.74 + (0.6215 * t) - (35.75 * (s ** 0.16)) + (0.4275 * t * (s ** 0.16)));
   } 
   else {
     windchill = "N/A";
   }
-  document.getElementById("#wind-chill").innerHTML = windchill;
-  
 }

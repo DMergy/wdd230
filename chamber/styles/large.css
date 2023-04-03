@@ -151,7 +151,7 @@
         grid-row: 1 / 2;
     }
     
-    .info {
+    .statement {
         grid-column: 1 / 4;
         grid-row: 2 / 3;
         border-top: 1px solid black;

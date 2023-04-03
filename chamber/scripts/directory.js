@@ -26,7 +26,7 @@ async function getSeasideData() {
     
 }
 
-getSeasideData();
+getSeasideData()
   
 const displaySeaside = (seaside) => {
     const cards = document.querySelector("section.cards"); // select the output container element
@@ -48,7 +48,7 @@ const displaySeaside = (seaside) => {
         
         // Build the image portrait by setting all the relevant attributes
         web.setAttribute("href", `${seaside.web}`);
-        web.textContent = "Website - Click Here";
+        web.textContent = `${seaside.curl}`;
 
         logo.setAttribute("src", seaside.logo);
         logo.setAttribute("alt", "Business Logo");
@@ -65,4 +65,5 @@ const displaySeaside = (seaside) => {
         
         cards.appendChild(card);
     })
+
 }

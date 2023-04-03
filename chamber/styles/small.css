@@ -122,6 +122,7 @@ main {
     grid-template-columns: 2fr;
     grid-template-rows: fit-content;
     padding: 0.20em;
+    margin: 0;
 }
 
 .event, .weather, .join, .hero, .news, .spotlight1, .spotlight2, .spotlight3 {
@@ -234,7 +235,7 @@ footer {
     grid-row: 1 / 2;
 }
 
-.info {
+.statement {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
     border-top: 1px solid black;
@@ -256,6 +257,7 @@ main#discoverss {
     grid-template-rows: auto;
     justify-content: center;
     font-size: 18px;
+    margin: 0;
       
 }
 
@@ -385,6 +387,10 @@ form label.top input:required:valid {
 
 /* ------------- Join Table ----------- */
 
+main#joinss {
+    margin: 0;
+}
+
 html {
     font-family: sans-serif;
 }
@@ -449,6 +455,7 @@ main#directoryss {
     display: block;
     font-size: 16px;
     background-color: #f8e16c;
+    margin: 0;
 }
 
 .menu {
@@ -495,16 +502,14 @@ section {
     padding: 0px;
 }
 
-.list {
+.list .cards {
 	display: flex;
 	flex-direction: column;
     width: 100%;
-    
 }
 
 .list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	display: block;
 	margin: 0;
 	padding: 0.25rem;
     border: none;
@@ -531,6 +536,7 @@ section {
 
 main#contactss {
     display: block;
+    margin: 0;
 }
 
     
