@@ -6,11 +6,6 @@ const windSpeed = document.querySelector("#wind-speed");
 
 const url = "http://api.openweathermap.org/data/2.5/weather?q=Seaside&units=imperial&appid=d4c57419a8ef6c84627d5049294d57b5";
 
-if (location.protocol === 'http:') {
-  url = "http://api.openweathermap.org/data/2.5/weather?q=Seaside&units=imperial&appid=d4c57419a8ef6c84627d5049294d57b5";
-} else {
-  url = "http://api.openweathermap.org/data/2.5/weather?q=Seaside&units=imperial&appid=d4c57419a8ef6c84627d5049294d57b5";
-}
 async function apiFetch() {
     try {
         const response = await fetch(url);
